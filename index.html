@@ -3,15 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wyayang Enterprise Ltd. | Agricultural Production &amp; Processing</title>
-<meta name="description" content="Wyayang Enterprise Ltd. — foremost agricultural producing and processing company in Nigeria. Professionalism, Reliability, Integrity, Quality.">
+<title>Wyayang Enterprise Ltd. | Agricultural Production &amp; Processing in Nigeria</title>
+<meta name="description" content="Wyayang Enterprise Ltd. is a Lagos-based agricultural production and processing company in Nigeria, delivering reliable, quality produce from field to shelf.">
+<meta name="keywords" content="Wyayang, Wyayang Enterprise, agricultural production Nigeria, agricultural processing company, farm produce Lagos, agribusiness Nigeria, food processing Nigeria">
+<meta name="author" content="Wyayang Enterprise Ltd.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14213D">
+<link rel="canonical" href="https://www.wyayangenterprise.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="images/Wyayang-logo.jpeg">
+<link rel="apple-touch-icon" href="images/Wyayang-logo.jpeg">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wyayang Enterprise Ltd.">
+<meta property="og:title" content="Wyayang Enterprise Ltd. | Agricultural Production &amp; Processing in Nigeria">
+<meta property="og:description" content="Foremost agricultural producing and processing company in Nigeria — Professionalism, Reliability, Integrity, Quality, from field to shelf.">
+<meta property="og:image" content="images/Wyayang-logo.jpeg">
+<meta property="og:url" content="https://www.wyayangenterprise.com/">
+<meta property="og:locale" content="en_NG">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wyayang Enterprise Ltd. | Agricultural Production &amp; Processing in Nigeria">
+<meta name="twitter:description" content="Foremost agricultural producing and processing company in Nigeria — Professionalism, Reliability, Integrity, Quality, from field to shelf.">
+<meta name="twitter:image" content="images/Wyayang-logo.jpeg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wyayang Enterprise Ltd.",
+  "url": "https://www.wyayangenterprise.com/",
+  "logo": "images/Wyayang-logo.jpeg",
+  "description": "Wyayang Enterprise Ltd. is a Lagos-based agricultural production and processing company in Nigeria.",
+  "email": "wyayang@gmail.com",
+  "telephone": "+234-816-618-7159",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lagos",
+    "addressCountry": "NG"
+  },
+  "sameAs": []
+}
+</script>
+
 <style>
-  /* ============ TOKENS ============ */
   :root{
     --navy: #14213D;
     --navy-2: #0E1830;
@@ -99,6 +142,8 @@
     background: var(--gold-deep);
     display:inline-block;
   }
+  .eyebrow.on-dark{ color: var(--gold-pale); }
+  .eyebrow.on-dark::before{ background: var(--gold-pale); }
 
   /* ============ PRELOADER ============ */
   #preloader{
@@ -138,8 +183,7 @@
 
   .pre-word{
     margin-top: 22px;
-    font-family: var(--display);
-    font-weight: 900;
+    font-family: var(--display); font-weight: 900;
     font-size: clamp(30px, 6vw, 46px);
     color: var(--white);
     letter-spacing: 0.02em;
@@ -195,11 +239,11 @@
   header{
     position: fixed; top:0; left:0; right:0;
     z-index: 500;
-    padding: 20px 0;
+    padding: 22px 0;
     transition: background 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease;
   }
   header.scrolled{
-    background: rgba(251,247,239,0.86);
+    background: rgba(251,247,239,0.88);
     backdrop-filter: blur(14px) saturate(1.4);
     -webkit-backdrop-filter: blur(14px) saturate(1.4);
     padding: 12px 0;
@@ -208,41 +252,38 @@
   header .container{ display:flex; align-items:center; justify-content:space-between; }
 
   .brand{ display:flex; align-items:center; gap:10px; }
-  .brand-mark{ width: 30px; height: 30px; flex-shrink:0; }
-  .brand-name{
-    font-family: var(--display); font-weight: 800; font-size: 21px;
-    color: var(--gold); letter-spacing: -0.005em;
-    text-shadow: 0 0 18px rgba(224,166,58,0.35);
-    transition: color 0.35s ease, text-shadow 0.35s ease;
+  .brand-mark{
+    height: 64px; width: auto; max-width: 180px;
+    flex-shrink:0; object-fit: contain;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 5px 9px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
   }
-  header.scrolled .brand-name{ color: var(--gold-ink); text-shadow: none; }
-  .brand:hover .brand-name{ color: var(--gold-pale); }
-  header.scrolled .brand:hover .brand-name{ color: var(--gold-deep); }
+  footer .brand-mark{ height: 54px; }
+  .brand-name{
+    font-family: var(--display); font-weight: 800; font-size: 23px;
+    color: var(--white); letter-spacing: -0.005em;
+    transition: color 0.35s ease;
+  }
+  header.scrolled .brand-name{ color: var(--navy); }
 
   nav.primary-nav{ display:flex; align-items:center; gap: 38px; }
   nav.primary-nav > a:not(.btn){
     font-size: 13.5px; font-weight: 700; letter-spacing: 0.05em;
-    color: var(--gold);
+    color: rgba(255,255,255,0.88);
     position: relative;
     padding: 4px 0;
-    text-shadow: 0 0 18px rgba(224,166,58,0.35);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease;
   }
-  nav.primary-nav > a:not(.btn):hover{
-    color: var(--gold-pale);
-    text-shadow: 0 0 22px rgba(224,166,58,0.55);
-  }
-  header.scrolled nav.primary-nav > a:not(.btn){
-    color: var(--gold-ink);
-    text-shadow: none;
-  }
+  nav.primary-nav > a:not(.btn):hover{ color: var(--gold-pale); }
+  header.scrolled nav.primary-nav > a:not(.btn){ color: var(--navy); }
   header.scrolled nav.primary-nav > a:not(.btn):hover{ color: var(--gold-deep); }
   nav.primary-nav a::after{
     content:""; position:absolute; left:0; right:0; bottom:-2px; height:1.5px;
     background: var(--gold); transform: scaleX(0); transform-origin: left;
     transition: transform 0.3s var(--ease);
   }
-  header.scrolled nav.primary-nav a::after{ background: var(--gold-deep); }
   nav.primary-nav a:hover::after{ transform: scaleX(1); }
 
   .btn{
@@ -250,7 +291,7 @@
     font-weight: 700; font-size: 13.5px;
     letter-spacing: 0.02em;
     padding: 13px 24px;
-    border-radius: 4px;
+    border-radius: 3px;
     border: 1.5px solid transparent;
     cursor: pointer;
     transition: transform 0.35s var(--ease), background 0.35s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.35s ease;
@@ -263,75 +304,61 @@
   .btn-outline:hover{ background: var(--gold); color: var(--navy); box-shadow: var(--shadow-gold); }
   header.scrolled .btn-outline{ border-color: var(--gold-ink); color: var(--gold-ink); }
   header.scrolled .btn-outline:hover{ background: var(--gold-deep); color: var(--white); border-color: var(--gold-deep); }
-  .btn-ghost-light{ border-color: rgba(255,255,255,0.38); color: var(--white); }
-  .btn-ghost-light:hover{ background: rgba(255,255,255,0.1); border-color: var(--white); }
+  .btn-ghost-light{ border-color: rgba(255,255,255,0.4); color: var(--white); }
+  .btn-ghost-light:hover{ background: rgba(255,255,255,0.12); border-color: var(--white); }
+  .btn-dark{ background: var(--navy); color: var(--white); }
+  .btn-dark:hover{ background: var(--navy-2); }
 
   .nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding: 6px; }
-  .nav-toggle span{ width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .nav-toggle span{ width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease; }
+  header.scrolled .nav-toggle span{ background: var(--navy); }
 
-  /* ============ HERO ============ */
+  /* ============ HERO (photo, full-bleed) ============ */
   .hero{
     position: relative;
     min-height: 100vh;
-    background: radial-gradient(130% 100% at 50% 120%, var(--navy-soft) 0%, var(--navy) 45%, var(--navy-2) 100%);
     overflow: hidden;
     display: flex;
-    align-items: center;
-    padding-top: 110px;
+    align-items: flex-end;
+    isolation: isolate;
   }
-  .hero-rays{
-    position: absolute; left: 50%; bottom: -6%;
-    transform: translateX(-50%);
-    width: min(1400px, 190vw);
-    opacity: 0.55;
-    pointer-events: none;
+  .hero-media{ position:absolute; inset:0; z-index:-2; }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; }
+  .hero-media::after{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(180deg, rgba(14,24,48,0.62) 0%, rgba(14,24,48,0.28) 32%, rgba(14,24,48,0.5) 68%, rgba(14,24,48,0.94) 100%),
+      linear-gradient(90deg, rgba(14,24,48,0.55) 0%, rgba(14,24,48,0.1) 46%);
   }
-  .hero-field{
-    position: absolute; left:0; right:0; bottom:0; height: 34%;
-    z-index: 1;
-  }
-  .hero .container{ position: relative; z-index: 3; }
 
-  .hero-inner{ max-width: 720px; padding: 40px 0 120px; }
-  .hero-inner .eyebrow{ color: var(--gold-pale); }
-  .hero-inner .eyebrow::before{ background: var(--gold-pale); }
-
+  .hero .container{ position: relative; z-index: 3; padding-bottom: 76px; padding-top: 140px; }
+  .hero-inner{ max-width: 700px; }
   .hero h1{
-    font-size: clamp(40px, 6.4vw, 74px);
+    font-size: clamp(38px, 6vw, 68px);
     color: var(--white);
-    line-height: 1.03;
+    line-height: 1.04;
     margin-top: 20px;
     letter-spacing: -0.015em;
   }
-  .hero h1 em{
-    font-style: normal; color: var(--gold);
-    display:block;
-  }
+  .hero h1 em{ font-style: normal; color: var(--gold); display:block; }
   .hero p.lead{
-    margin-top: 24px;
-    font-size: 18px;
-    color: rgba(255,255,255,0.72);
-    max-width: 520px;
+    margin-top: 22px;
+    font-size: 17.5px;
+    color: rgba(255,255,255,0.78);
+    max-width: 500px;
     line-height: 1.65;
   }
-  .hero-actions{ margin-top: 38px; display:flex; gap: 16px; flex-wrap: wrap; }
-
-  .hero-meta{
-    margin-top: 64px;
-    display:flex; gap: 44px; flex-wrap: wrap;
-  }
-  .hero-meta div{ border-left: 1.5px solid rgba(224,166,58,0.4); padding-left: 16px; }
-  .hero-meta .num{ font-family: var(--display); font-weight: 700; font-size: 26px; color: var(--white); }
-  .hero-meta .lbl{ font-size: 12px; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); margin-top: 2px; text-transform: uppercase; }
+  .hero-actions{ margin-top: 36px; display:flex; gap: 16px; flex-wrap: wrap; }
 
   .scroll-cue{
-    position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%);
+    position: absolute; bottom: 28px; right: 28px;
     z-index: 3;
     display:flex; flex-direction: column; align-items:center; gap: 8px;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.6);
     font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase;
   }
-  .scroll-cue .stem{ width:1px; height: 34px; background: linear-gradient(rgba(255,255,255,0.55), transparent); animation: cueMove 1.8s ease-in-out infinite; }
+  .scroll-cue .stem{ width:1px; height: 34px; background: linear-gradient(rgba(255,255,255,0.6), transparent); animation: cueMove 1.8s ease-in-out infinite; }
   @keyframes cueMove{ 0%,100%{ transform: scaleY(1); opacity:0.7;} 50%{ transform: scaleY(0.6); opacity:1;} }
 
   /* ============ REVEAL UTILITY ============ */
@@ -347,42 +374,84 @@
     .reveal, .reveal-stagger > *{ opacity:1 !important; transform:none !important; transition:none !important; }
   }
 
-  /* ============ ABOUT ============ */
-  .about{ padding: 128px 0 110px; background: var(--cream); position: relative; }
-  .about-grid{ display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 72px; align-items: start; }
-  .about h2{ font-size: clamp(30px, 4vw, 42px); margin-top: 16px; line-height: 1.1; }
-  .about .lead-text{ margin-top: 20px; font-size: 17px; color: var(--ink-soft); max-width: 420px; line-height: 1.7; }
-
-  .about-cards{ display: grid; gap: 20px; }
-  .mv-card{
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 34px 36px;
+  /* ============ STAT BAR (sits under hero) ============ */
+  .stat-bar{ background: var(--navy-2); position: relative; }
+  .stat-bar .container{
+    display:grid; grid-template-columns: repeat(4, 1fr);
+  }
+  .stat-item{
+    padding: 42px 30px;
+    border-left: 1px solid rgba(255,255,255,0.08);
     position: relative;
+  }
+  .stat-item:first-child{ border-left: none; padding-left: 0; }
+  .stat-item .idx{ font-size: 11px; letter-spacing: 0.18em; color: var(--gold-pale); font-weight: 800; }
+  .stat-item .num{ font-family: var(--display); font-weight: 700; font-size: 28px; color: var(--white); margin-top: 10px; }
+  .stat-item .lbl{ font-size: 12.5px; color: rgba(255,255,255,0.52); margin-top: 4px; }
+
+  /* ============ ABOUT / MISSION (split with image) ============ */
+  .about{ padding: 128px 0 110px; background: var(--cream); position: relative; }
+  .about-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .about h2{ font-size: clamp(28px, 3.6vw, 40px); margin-top: 16px; line-height: 1.14; }
+  .about .lead-text{ margin-top: 20px; font-size: 16.5px; color: var(--ink-soft); max-width: 460px; line-height: 1.75; }
+  .about-media{ position:relative; border-radius: 10px; overflow:hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/5; }
+  .about-media img{ width:100%; height:100%; object-fit:cover; }
+  .about-media-tag{
+    position:absolute; left:20px; bottom:20px;
+    background: rgba(20,33,61,0.86); backdrop-filter: blur(6px);
+    color: var(--white); padding: 12px 18px; border-radius: 6px;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.02em;
+    display:flex; align-items:center; gap: 10px;
+  }
+  .about-media-tag .dot{ width:7px; height:7px; border-radius:50%; background: var(--gold); }
+
+  .about-mv{ margin-top: 40px; display:grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 460px; }
+  .mv-card{
+    border-left: 3px solid var(--gold-deep);
+    padding: 4px 0 4px 16px;
+  }
+  .mv-card .tag{ font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); font-weight: 800; }
+  .mv-card p{ margin-top: 8px; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+
+  /* ============ FEATURED / PRODUCTION LINES (photo grid) ============ */
+  .lines{ padding: 120px 0; background: var(--cream-2); }
+  .lines-head{ display:flex; justify-content: space-between; align-items: flex-end; gap: 40px; flex-wrap: wrap; }
+  .lines-head h2{ font-size: clamp(28px, 3.6vw, 38px); margin-top: 16px; max-width: 520px; }
+  .lines-head .see-all{
+    font-size: 13.5px; font-weight: 800; color: var(--navy); letter-spacing: 0.02em;
+    display:inline-flex; align-items:center; gap: 8px; padding-bottom: 2px; border-bottom: 1.5px solid var(--navy);
+    transition: color 0.25s ease, border-color 0.25s ease, gap 0.25s ease;
+  }
+  .lines-head .see-all:hover{ color: var(--gold-deep); border-color: var(--gold-deep); gap: 12px; }
+
+  .lines-grid{ margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .line-card{
+    position: relative;
+    border-radius: 8px;
     overflow: hidden;
+    aspect-ratio: 3/4;
     box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease), border-color 0.4s ease;
+    transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
   }
-  .mv-card:hover{
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
-    border-color: rgba(198,132,28,0.28);
+  .line-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-5px); }
+  .line-card img{ width:100%; height:100%; object-fit:cover; transition: transform 0.6s var(--ease); }
+  .line-card:hover img{ transform: scale(1.06); }
+  .line-card::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(0deg, rgba(14,24,48,0.9) 0%, rgba(14,24,48,0.15) 46%, transparent 70%);
   }
-  .mv-card::before{
-    content:""; position:absolute; top:0; left:0; width:4px; height:100%;
-    background: var(--gold-deep);
+  .line-card-body{
+    position:absolute; left:0; right:0; bottom:0; padding: 22px 20px;
+    z-index: 2;
   }
-  .mv-card h3{ font-size: 21px; display:flex; align-items:center; gap: 10px; }
-  .mv-card p{ margin-top: 12px; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
-  .mv-card .tag{ font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); font-weight: 800; }
+  .line-card-body .kicker{ font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-pale); font-weight: 800; }
+  .line-card-body h4{ color: var(--white); font-size: 17px; margin-top: 8px; line-height: 1.28; }
 
   /* ============ VALUES (PRIQ) ============ */
   .values{ background: var(--navy); padding: 120px 0; position: relative; overflow: hidden; }
   .values-rays{ position:absolute; top: -10%; right: -8%; width: 480px; opacity: 0.12; }
-  .values .eyebrow{ color: var(--gold-pale); }
-  .values .eyebrow::before{ background: var(--gold-pale); }
-  .values h2{ color: var(--white); font-size: clamp(30px, 4vw, 42px); margin-top: 16px; max-width: 640px; }
+  .values h2{ color: var(--white); font-size: clamp(28px, 3.6vw, 40px); margin-top: 16px; max-width: 640px; }
 
   .priq-grid{
     margin-top: 64px;
@@ -410,9 +479,9 @@
   .priq-card p{ color: rgba(255,255,255,0.56); font-size: 14px; margin-top: 11px; line-height: 1.7; }
 
   /* ============ PROCESS ============ */
-  .process{ padding: 130px 0; background: var(--cream-2); }
+  .process{ padding: 130px 0; background: var(--cream); }
   .process-head{ display:flex; justify-content: space-between; align-items: flex-end; gap: 40px; flex-wrap: wrap; }
-  .process h2{ font-size: clamp(30px, 4vw, 42px); margin-top: 16px; max-width: 520px; }
+  .process h2{ font-size: clamp(28px, 3.6vw, 40px); margin-top: 16px; max-width: 520px; }
   .process-head p{ max-width: 360px; color: var(--ink-soft); font-size: 15px; line-height: 1.7; }
 
   .process-steps{ margin-top: 70px; position: relative; }
@@ -435,39 +504,31 @@
   .step h4{ margin-top: 22px; font-size: 18px; }
   .step p{ margin-top: 10px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.65; }
 
-  /* ============ SHOWCASE / STATS BAND ============ */
-  .showcase{ padding: 120px 0; background: var(--cream); }
-  .showcase-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-  .showcase-art{ position: relative; }
-  .showcase-art svg{ width: 100%; height: auto; }
-  .showcase h2{ font-size: clamp(28px, 3.6vw, 38px); margin-top: 16px; line-height: 1.15; }
-  .showcase p.lead-text{ margin-top: 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.75; max-width: 460px; }
-
-  .stat-row{ margin-top: 40px; display:grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-  .stat-row .num{ font-family: var(--display); font-weight: 800; font-size: 30px; color: var(--navy); }
-  .stat-row .lbl{ font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; }
-
-  /* ============ CTA BAND ============ */
+  /* ============ CTA BAND (photo) ============ */
   .cta-band{
     margin: 0 28px;
     max-width: calc(var(--container) - 0px);
     margin-left: auto; margin-right: auto;
-    background: linear-gradient(120deg, var(--navy) 0%, var(--navy-soft) 100%);
     border-radius: 16px;
-    padding: 76px 62px;
-    display:flex; align-items:center; justify-content: space-between; gap: 40px; flex-wrap: wrap;
+    padding: 96px 62px;
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    isolation: isolate;
+    min-height: 380px;
+    display:flex; align-items:flex-end;
   }
-  .cta-band::after{
+  .cta-band img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2;
+  }
+  .cta-band::before{
     content:"";
-    position:absolute; right: -60px; top: -60px; width: 240px; height: 240px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(224,166,58,0.35), transparent 70%);
+    position:absolute; inset:0; z-index:-1;
+    background: linear-gradient(180deg, rgba(14,24,48,0.35) 0%, rgba(14,24,48,0.55) 55%, rgba(14,24,48,0.92) 100%);
   }
-  .cta-band h2{ color: var(--white); font-size: clamp(26px, 3.4vw, 36px); max-width: 480px; position: relative; z-index:2; }
-  .cta-actions{ position: relative; z-index: 2; display:flex; gap: 14px; flex-wrap: wrap; }
+  .cta-inner{ display:flex; align-items:center; justify-content: space-between; gap: 40px; flex-wrap: wrap; width:100%; }
+  .cta-band h2{ color: var(--white); font-size: clamp(24px, 3.2vw, 34px); max-width: 480px; }
+  .cta-actions{ display:flex; gap: 14px; flex-wrap: wrap; }
 
   /* ============ FOOTER ============ */
   footer{ background: var(--navy-2); color: rgba(255,255,255,0.65); padding: 90px 0 30px; margin-top: 130px; position: relative; overflow: hidden; }
@@ -488,11 +549,13 @@
   /* ============ RESPONSIVE ============ */
   @media (max-width: 980px){
     .about-grid{ grid-template-columns: 1fr; gap: 44px; }
+    .about-media{ order: -1; aspect-ratio: 16/10; }
+    .stat-bar .container{ grid-template-columns: repeat(2, 1fr); }
+    .stat-item:nth-child(3){ border-left:none; }
+    .lines-grid{ grid-template-columns: repeat(2, 1fr); }
     .priq-grid{ grid-template-columns: repeat(2, 1fr); }
     .steps-row{ grid-template-columns: repeat(2, 1fr); row-gap: 46px; }
     .process-steps::before{ display:none; }
-    .showcase-grid{ grid-template-columns: 1fr; }
-    .showcase-art{ order: -1; }
     .footer-grid{ grid-template-columns: 1fr 1fr; row-gap: 40px; }
   }
 
@@ -505,28 +568,23 @@
       z-index: 400;
     }
     nav.primary-nav.open{ transform: translateX(0); }
-    header nav.primary-nav > a:not(.btn),
-    header.scrolled nav.primary-nav > a:not(.btn){
-      color: var(--gold); font-size: 17px; text-shadow: none;
-    }
-    header nav.primary-nav > a:not(.btn):hover,
-    header.scrolled nav.primary-nav > a:not(.btn):hover{ color: var(--gold-pale); }
+    nav.primary-nav > a:not(.btn){ color: var(--gold); font-size: 17px; }
+    nav.primary-nav > a:not(.btn):hover{ color: var(--gold-pale); }
     nav.primary-nav a::after{ background: var(--gold); }
-    header.scrolled .btn-outline{ border-color: var(--gold); color: var(--gold); }
-    header.scrolled .btn-outline:hover{ background: var(--gold); color: var(--navy); }
     nav.primary-nav .btn{ margin-top: 10px; }
     .nav-toggle{ display:flex; }
     .nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
     .nav-toggle.open span:nth-child(2){ opacity:0; }
     .nav-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
 
-    .hero-meta{ gap: 26px; margin-top: 46px; }
+    .stat-bar .container{ grid-template-columns: 1fr 1fr; }
+    .lines-grid{ grid-template-columns: 1fr; }
     .priq-grid{ grid-template-columns: 1fr; }
     .steps-row{ grid-template-columns: 1fr; }
-    .stat-row{ grid-template-columns: repeat(3,1fr); gap: 14px; }
-    .cta-band{ padding: 50px 28px; flex-direction: column; align-items: flex-start; }
+    .cta-band{ padding: 56px 28px; }
+    .cta-inner{ flex-direction: column; align-items: flex-start; }
     .footer-grid{ grid-template-columns: 1fr; gap: 34px; }
-    .about, .values, .process, .showcase{ padding: 84px 0; }
+    .about, .lines, .values, .process{ padding: 84px 0; }
   }
 
   .nav-scrim{
@@ -536,98 +594,77 @@
   .nav-scrim.show{ opacity:1; visibility: visible; }
 
   /* ============ MARQUEE ============ */
-  .marquee{
-    background: var(--gold-deep);
-    overflow: hidden;
-    padding: 16px 0;
-    position: relative;
-  }
-  .marquee-track{
-    display: flex;
-    width: max-content;
-    animation: marqueeScroll 26s linear infinite;
-  }
+  .marquee{ background: var(--gold-deep); overflow: hidden; padding: 16px 0; position: relative; }
+  .marquee-track{ display: flex; width: max-content; animation: marqueeScroll 26s linear infinite; }
   .marquee-track span{
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--navy-2);
-    white-space: nowrap;
-    padding: 0 28px;
+    display: inline-flex; align-items: center;
+    font-family: var(--display); font-weight: 700; font-size: 20px;
+    color: var(--navy-2); white-space: nowrap; padding: 0 28px;
   }
   .marquee-track span::after{
-    content: "";
-    width: 6px; height: 6px;
-    margin-left: 28px;
-    background: rgba(20,33,61,0.4);
-    transform: rotate(45deg);
-    display: inline-block;
+    content: ""; width: 6px; height: 6px; margin-left: 28px;
+    background: rgba(20,33,61,0.4); transform: rotate(45deg); display: inline-block;
   }
-  @keyframes marqueeScroll{
-    from{ transform: translateX(0); }
-    to{ transform: translateX(-50%); }
-  }
+  @keyframes marqueeScroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
   .marquee:hover .marquee-track{ animation-play-state: paused; }
-  @media (prefers-reduced-motion: reduce){
-    .marquee-track{ animation: none; }
-  }
+  @media (prefers-reduced-motion: reduce){ .marquee-track{ animation: none; } }
 
   /* ============ CONTACT FORM ============ */
   .contact-form{ padding: 130px 0; background: var(--cream-2); }
   .lead-grid{ display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 70px; align-items: start; }
-  .contact-form h2{ font-size: clamp(30px, 4vw, 42px); margin-top: 16px; max-width: 460px; }
+  .contact-form h2{ font-size: clamp(28px, 3.6vw, 40px); margin-top: 16px; max-width: 460px; }
   .contact-form p.lead-text{ margin-top: 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.75; max-width: 420px; }
 
   .lead-note{
-    margin-top: 34px;
-    display: flex; align-items: center; gap: 14px;
-    padding: 16px 20px;
-    background: rgba(94,110,69,0.08);
-    border: 1px solid rgba(94,110,69,0.22);
-    border-radius: 8px;
-    max-width: 420px;
+    margin-top: 34px; display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px; background: rgba(94,110,69,0.08); border: 1px solid rgba(94,110,69,0.22);
+    border-radius: 8px; max-width: 420px;
   }
   .lead-note svg{ flex-shrink: 0; width: 26px; height: 26px; }
   .lead-note span{ font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; }
 
   .lead-form{
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 44px;
+    background: var(--white); border: 1px solid var(--line); border-radius: 26px; padding: 44px;
     box-shadow: var(--shadow-lg);
+    transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease), border-color 0.45s ease;
+  }
+  .lead-form:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 32px 70px -18px rgba(14,24,48,0.38), 0 6px 18px rgba(14,24,48,0.12);
+    border-color: rgba(198,132,28,0.35);
+  }
+  @keyframes formPopIn{
+    from{ opacity: 0; transform: translateY(30px) scale(0.98); }
+    to{ opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .lead-grid .reveal:nth-child(2) .lead-form{
+    animation: formPopIn 0.8s var(--ease) both;
+    animation-play-state: paused;
+  }
+  .lead-grid .reveal.in:nth-child(2) .lead-form{ animation-play-state: running; }
+  @media (prefers-reduced-motion: reduce){
+    .lead-form{ transition: none; }
+    .lead-form:hover{ transform: none; }
+    .lead-grid .reveal:nth-child(2) .lead-form{ animation: none; }
   }
   .form-row{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .field{ margin-bottom: 22px; }
   .field label{
-    display: block;
-    font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+    display: block; font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--navy); margin-bottom: 9px;
   }
   .field input, .field select, .field textarea{
-    width: 100%;
-    font-family: var(--body);
-    font-size: 15px;
-    color: var(--ink);
-    padding: 14px 16px;
-    border: 1.5px solid var(--line);
-    border-radius: 6px;
-    background: var(--cream);
+    width: 100%; font-family: var(--body); font-size: 15px; color: var(--ink);
+    padding: 14px 16px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--cream);
     transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   }
   .field input:focus, .field select:focus, .field textarea:focus{
-    outline: none;
-    border-color: var(--gold-deep);
-    background: var(--white);
+    outline: none; border-color: var(--gold-deep); background: var(--white);
     box-shadow: 0 0 0 4px rgba(198,132,28,0.12);
   }
   .field textarea{ resize: vertical; min-height: 100px; }
   .field-hint{ font-size: 12px; color: var(--ink-soft); margin-top: 14px; }
-  .field-error{
-    font-size: 12.5px; color: #B3401F; margin-top: 6px; display: none;
-  }
+  .field-error{ font-size: 12.5px; color: #B3401F; margin-top: 6px; display: none; }
   .field.invalid input, .field.invalid select, .field.invalid textarea{ border-color: #B3401F; }
   .field.invalid .field-error{ display: block; }
 
@@ -635,26 +672,16 @@
   .btn svg{ width: 17px; height: 17px; }
 
   .lead-success{
-    display: none;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 18px 20px;
-    background: rgba(94,110,69,0.1);
-    border: 1px solid rgba(94,110,69,0.3);
-    border-radius: 8px;
-    margin-top: 18px;
-    font-size: 14px;
-    color: var(--olive);
-    line-height: 1.6;
+    display: none; align-items: flex-start; gap: 14px; padding: 18px 20px;
+    background: rgba(94,110,69,0.1); border: 1px solid rgba(94,110,69,0.3); border-radius: 8px;
+    margin-top: 18px; font-size: 14px; color: var(--olive); line-height: 1.6;
   }
   .lead-success.show{ display: flex; }
 
-  @media (max-width: 980px){
-    .lead-grid{ grid-template-columns: 1fr; gap: 44px; }
-  }
+  @media (max-width: 980px){ .lead-grid{ grid-template-columns: 1fr; gap: 44px; } }
   @media (max-width: 620px){
     .form-row{ grid-template-columns: 1fr; gap: 0; }
-    .lead-form{ padding: 30px 24px; }
+    .lead-form{ padding: 30px 24px; border-radius: 20px; }
     .marquee-track span{ font-size: 16px; padding: 0 18px; }
   }
 </style>
@@ -665,11 +692,6 @@
 <div id="preloader" role="status" aria-live="polite" aria-label="Loading Wyayang Enterprise">
   <svg class="pre-rays" viewBox="0 0 128 128" aria-hidden="true">
     <circle cx="64" cy="108" r="23"></circle>
-    <g>
-      <line x1="64" y1="80" x2="64" y2="62"></line>
-      <line x1="45" y1="85" x2="34" y2="70" transform="rotate(0)"></line>
-    </g>
-    <!-- rays -->
     <g id="rayGroup"></g>
   </svg>
   <div class="pre-word">Wyayang</div>
@@ -682,24 +704,15 @@
 <header id="siteHeader">
   <div class="container">
     <a href="#top" class="brand" aria-label="Wyayang Enterprise home">
-      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-        <g stroke="#C6841C" stroke-width="6" stroke-linecap="round">
-          <line x1="50" y1="4" x2="50" y2="20"/>
-          <line x1="50" y1="4" x2="50" y2="20" transform="rotate(30 50 50)"/>
-          <line x1="50" y1="4" x2="50" y2="20" transform="rotate(60 50 50)"/>
-          <line x1="50" y1="4" x2="50" y2="20" transform="rotate(-30 50 50)"/>
-          <line x1="50" y1="4" x2="50" y2="20" transform="rotate(-60 50 50)"/>
-        </g>
-        <path d="M18 62 A32 32 0 0 1 82 62 Z" fill="#14213D"/>
-      </svg>
+      <img class="brand-mark" src="images/Wyayang-logo.jpeg" alt="Wyayang Enterprise Ltd. logo">
       <span class="brand-name">Wyayang</span>
     </a>
 
     <nav class="primary-nav" id="primaryNav">
       <a href="#about">About</a>
+      <a href="#produce">What We Do</a>
       <a href="#values">Values</a>
       <a href="#process">Process</a>
-      <a href="#showcase">Why Us</a>
       <a href="#contact" class="btn btn-outline">Get in touch</a>
     </nav>
 
@@ -712,52 +725,48 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="grain"></div>
-  <svg class="hero-rays" viewBox="0 0 1000 500" aria-hidden="true">
-    <g stroke="#E0A63A" stroke-width="1.5" opacity="0.5">
-      <line x1="500" y1="480" x2="500" y2="60"/>
-      <line x1="500" y1="480" x2="620" y2="80" transform="rotate(6 500 480)"/>
-      <line x1="500" y1="480" x2="380" y2="80" transform="rotate(-6 500 480)"/>
-      <line x1="500" y1="480" x2="700" y2="100" transform="rotate(12 500 480)"/>
-      <line x1="500" y1="480" x2="300" y2="100" transform="rotate(-12 500 480)"/>
-      <line x1="500" y1="480" x2="780" y2="140" transform="rotate(18 500 480)"/>
-      <line x1="500" y1="480" x2="220" y2="140" transform="rotate(-18 500 480)"/>
-      <line x1="500" y1="480" x2="850" y2="200" transform="rotate(24 500 480)"/>
-      <line x1="500" y1="480" x2="150" y2="200" transform="rotate(-24 500 480)"/>
-    </g>
-    <circle cx="500" cy="480" r="230" fill="none" stroke="#E0A63A" stroke-width="1.5" opacity="0.35"/>
-  </svg>
-
-  <svg class="hero-field" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,140 C240,80 340,180 620,120 C900,60 1040,170 1440,110 L1440,300 L0,300 Z" fill="#0E1830"/>
-    <path d="M0,190 C260,150 420,220 700,170 C980,120 1180,210 1440,160 L1440,300 L0,300 Z" fill="#111c38" opacity="0.9"/>
-    <g stroke="#5E6E45" stroke-width="2" opacity="0.55" stroke-linecap="round">
-      <line x1="80" y1="230" x2="80" y2="205"/><line x1="140" y1="235" x2="140" y2="208"/><line x1="200" y1="228" x2="200" y2="203"/>
-      <line x1="260" y1="238" x2="260" y2="210"/><line x1="320" y1="230" x2="320" y2="204"/><line x1="380" y1="240" x2="380" y2="212"/>
-      <line x1="1000" y1="220" x2="1000" y2="196"/><line x1="1060" y1="228" x2="1060" y2="202"/><line x1="1120" y1="222" x2="1120" y2="198"/>
-      <line x1="1180" y1="232" x2="1180" y2="206"/><line x1="1240" y1="224" x2="1240" y2="200"/><line x1="1300" y1="230" x2="1300" y2="204"/>
-    </g>
-  </svg>
-
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1720183093696-f2a999e721a2?auto=format&fit=crop&w=2400&q=80" alt="Aerial view of cultivated farmland with neat plowed rows">
+  </div>
   <div class="container">
-    <div class="hero-inner">
-      <span class="eyebrow">RC 1876531 &middot; Lagos, Nigeria</span>
+    <div class="hero-inner reveal in">
+      <span class="eyebrow on-dark">RC 1876531 &middot; Lagos, Nigeria</span>
       <h1>Cultivating Nigeria's <em>next harvest.</em></h1>
       <p class="lead">Wyayang Enterprise Ltd. produces and processes agricultural goods with modern technology and disciplined craft &mdash; built to be the foremost name in agriculture across Nigeria, Africa, and beyond.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-gold">Partner with us</a>
         <a href="#process" class="btn btn-ghost-light">See how we work</a>
       </div>
-      <div class="hero-meta">
-        <div><div class="num">PRIQ</div><div class="lbl">Our operating code</div></div>
-        <div><div class="num">Field&nbsp;&rarr;&nbsp;Shelf</div><div class="lbl">Full production chain</div></div>
-        <div><div class="num">RC&nbsp;1876531</div><div class="lbl">Registered in Nigeria</div></div>
-      </div>
     </div>
   </div>
-
   <div class="scroll-cue"><span>Scroll</span><span class="stem"></span></div>
 </section>
+
+<!-- ============ STAT BAR ============ -->
+<div class="stat-bar">
+  <div class="container reveal-stagger">
+    <div class="stat-item">
+      <div class="idx">(01)</div>
+      <div class="num">PRIQ</div>
+      <div class="lbl">Our operating code</div>
+    </div>
+    <div class="stat-item">
+      <div class="idx">(02)</div>
+      <div class="num">Field&nbsp;&rarr;&nbsp;Shelf</div>
+      <div class="lbl">Full production chain</div>
+    </div>
+    <div class="stat-item">
+      <div class="idx">(03)</div>
+      <div class="num">100%</div>
+      <div class="lbl">Nigerian owned &amp; operated</div>
+    </div>
+    <div class="stat-item">
+      <div class="idx">(04)</div>
+      <div class="num">RC&nbsp;1876531</div>
+      <div class="lbl">Registered in Nigeria</div>
+    </div>
+  </div>
+</div>
 
 <!-- ============ ABOUT ============ -->
 <section class="about" id="about">
@@ -766,18 +775,65 @@
       <span class="eyebrow">Who we are</span>
       <h2>An agricultural company built on discipline, not shortcuts.</h2>
       <p class="lead-text">From sourcing raw produce to processing it into goods that meet real market standards, Wyayang treats agriculture as an engineering problem &mdash; one solved with process, quality control, and people who show up.</p>
+
+      <div class="about-mv">
+        <div class="mv-card">
+          <span class="tag">Vision</span>
+          <p>To be the foremost agricultural producing and processing company in Nigeria, Africa, and globally.</p>
+        </div>
+        <div class="mv-card">
+          <span class="tag">Mission</span>
+          <p>Modern technology and hands-on expertise, delivering the most reliable product &mdash; every batch, every time.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="about-cards reveal-stagger">
-      <div class="mv-card">
-        <span class="tag">Vision</span>
-        <h3>Where we're headed</h3>
-        <p>To be the foremost agricultural producing and processing company in Nigeria, across the African continent, and globally.</p>
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1756421637427-20845a198219?auto=format&fit=crop&w=1600&q=80" alt="Rolling green farmland with long rows of crops">
+      <div class="about-media-tag"><span class="dot"></span> Active cultivation, Nigeria</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PRODUCTION LINES ============ -->
+<section class="lines" id="produce">
+  <div class="container">
+    <div class="lines-head reveal">
+      <div>
+        <span class="eyebrow">What we run</span>
+        <h2>Every stage of production, under one roof.</h2>
       </div>
-      <div class="mv-card">
-        <span class="tag">Mission</span>
-        <h3>How we get there</h3>
-        <p>Through modern technology and hands-on expertise, we deliver the best and most reliable product to suit our customers' needs &mdash; every batch, every time.</p>
+      <a href="#contact" class="see-all">Discuss a partnership &rarr;</a>
+    </div>
+
+    <div class="lines-grid reveal-stagger">
+      <div class="line-card">
+        <img src="https://images.unsplash.com/photo-1720334540915-335eaf0eb1d2?auto=format&fit=crop&w=900&q=80" alt="Combine harvester working a golden wheat field">
+        <div class="line-card-body">
+          <span class="kicker">Sourcing</span>
+          <h4>Mechanized Harvest</h4>
+        </div>
+      </div>
+      <div class="line-card">
+        <img src="https://images.unsplash.com/photo-1715198901384-0b7ff9f37a77?auto=format&fit=crop&w=900&q=80" alt="Aerial view of crop rows under protective covers">
+        <div class="line-card-body">
+          <span class="kicker">Cultivation</span>
+          <h4>Precision Row Farming</h4>
+        </div>
+      </div>
+      <div class="line-card">
+        <img src="https://images.unsplash.com/photo-1720183093696-f2a999e721a2?auto=format&fit=crop&w=900&q=80" alt="Aerial view of plowed agricultural land">
+        <div class="line-card-body">
+          <span class="kicker">Processing</span>
+          <h4>Batch Quality Control</h4>
+        </div>
+      </div>
+      <div class="line-card">
+        <img src="https://images.unsplash.com/photo-1721292175149-8a929b7635f7?auto=format&fit=crop&w=900&q=80" alt="Golden hour light over green farmland">
+        <div class="line-card-body">
+          <span class="kicker">Delivery</span>
+          <h4>Distribution &amp; Logistics</h4>
+        </div>
       </div>
     </div>
   </div>
@@ -794,7 +850,7 @@
     </g>
   </svg>
   <div class="container">
-    <span class="eyebrow">What we run on</span>
+    <span class="eyebrow on-dark">What we run on</span>
     <h2>Four letters. One standard we don't bend on.</h2>
 
     <div class="priq-grid reveal-stagger">
@@ -870,44 +926,17 @@
   </div>
 </section>
 
-<!-- ============ SHOWCASE ============ -->
-<section class="showcase" id="showcase">
-  <div class="container showcase-grid">
-    <div class="reveal">
-      <span class="eyebrow">Why Wyayang</span>
-      <h2>Built by people who treat agriculture like an exact science.</h2>
-      <p class="lead-text">Management and team bring hands-on expertise to every stage of production &mdash; not just to hit output targets, but to make sure what leaves our facility is something we'd stand behind.</p>
-
-      <div class="stat-row">
-        <div><div class="num">PRIQ</div><div class="lbl">Values in practice</div></div>
-        <div><div class="num">NG</div><div class="lbl">Base of operations</div></div>
-        <div><div class="num">2026</div><div class="lbl">Operating today</div></div>
-      </div>
-    </div>
-
-    <div class="showcase-art reveal">
-      <svg viewBox="0 0 500 420" aria-hidden="true">
-        <rect x="0" y="260" width="500" height="160" fill="#F3EDE0"/>
-        <circle cx="250" cy="130" r="70" fill="#F3D48F"/>
-        <g stroke="#E0A63A" stroke-width="3" stroke-linecap="round" opacity="0.8">
-          <line x1="250" y1="30" x2="250" y2="52"/>
-          <line x1="330" y1="60" x2="316" y2="76" transform="rotate(0)"/>
-          <line x1="170" y1="60" x2="184" y2="76"/>
-          <line x1="368" y1="130" x2="346" y2="130"/>
-          <line x1="132" y1="130" x2="154" y2="130"/>
-        </g>
-        <path d="M0,300 C90,260 130,320 220,285 C320,246 380,310 500,270 L500,420 L0,420 Z" fill="#5E6E45" opacity="0.9"/>
-        <path d="M0,330 C110,300 170,350 260,320 C360,288 420,340 500,315 L500,420 L0,420 Z" fill="#4B5A38"/>
-        <g stroke="#293421" stroke-width="4" stroke-linecap="round">
-          <line x1="60" y1="400" x2="60" y2="360"/><line x1="100" y1="405" x2="100" y2="358"/><line x1="140" y1="398" x2="140" y2="355"/>
-          <line x1="180" y1="406" x2="180" y2="362"/><line x1="220" y1="399" x2="220" y2="356"/><line x1="260" y1="404" x2="260" y2="360"/>
-          <line x1="300" y1="397" x2="300" y2="354"/><line x1="340" y1="405" x2="340" y2="360"/><line x1="380" y1="400" x2="380" y2="358"/>
-          <line x1="420" y1="406" x2="420" y2="362"/><line x1="460" y1="398" x2="460" y2="355"/>
-        </g>
-      </svg>
+<!-- ============ CTA BAND (photo) ============ -->
+<div class="cta-band reveal">
+  <img src="https://images.unsplash.com/photo-1721292175149-8a929b7635f7?auto=format&fit=crop&w=2000&q=80" alt="Sunset light over green farmland">
+  <div class="cta-inner">
+    <h2>Prefer to talk directly? We're one call away.</h2>
+    <div class="cta-actions">
+      <a href="mailto:wyayang@gmail.com" class="btn btn-gold">Email us</a>
+      <a href="tel:+2348166187159" class="btn btn-ghost-light">Call now</a>
     </div>
   </div>
-</section>
+</div>
 
 <!-- ============ LEAD FORM -> WHATSAPP ============ -->
 <section class="contact-form" id="contact">
@@ -971,33 +1000,14 @@
   </div>
 </section>
 
-<!-- ============ CTA BAND ============ -->
-<div class="cta-band reveal">
-  <div class="grain"></div>
-  <h2>Prefer to talk directly? We're one call away.</h2>
-  <div class="cta-actions">
-    <a href="mailto:wyayang@gmail.com" class="btn btn-gold">Email us</a>
-    <a href="tel:+2348166187159" class="btn btn-ghost-light">Call now</a>
-  </div>
-</div>
-
-<!-- ============ FOOTER / CONTACT ============ -->
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="grain"></div>
   <div class="container">
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true" width="30" height="30">
-            <g stroke="#E0A63A" stroke-width="6" stroke-linecap="round">
-              <line x1="50" y1="4" x2="50" y2="20"/>
-              <line x1="50" y1="4" x2="50" y2="20" transform="rotate(30 50 50)"/>
-              <line x1="50" y1="4" x2="50" y2="20" transform="rotate(60 50 50)"/>
-              <line x1="50" y1="4" x2="50" y2="20" transform="rotate(-30 50 50)"/>
-              <line x1="50" y1="4" x2="50" y2="20" transform="rotate(-60 50 50)"/>
-            </g>
-            <path d="M18 62 A32 32 0 0 1 82 62 Z" fill="#FBF7EF"/>
-          </svg>
+          <img class="brand-mark" src="images/Wyayang-logo.jpeg" alt="Wyayang Enterprise Ltd. logo">
           <span class="brand-name">Wyayang</span>
         </div>
         <p class="blurb">Wyayang Enterprise Ltd. &mdash; agricultural production and processing, run on Professionalism, Reliability, Integrity, and Quality.</p>
@@ -1007,6 +1017,7 @@
         <h5>Company</h5>
         <ul>
           <li><a href="#about">About us</a></li>
+          <li><a href="#produce">What we do</a></li>
           <li><a href="#values">Our values</a></li>
           <li><a href="#process">Our process</a></li>
         </ul>
@@ -1042,7 +1053,6 @@
   "use strict";
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Build preloader rays dynamically (12 rays) ---------- */
   var rayGroup = document.getElementById('rayGroup');
   if(rayGroup){
     var count = 12;
@@ -1057,48 +1067,34 @@
     }
   }
 
-  /* ---------- Real-state driven preloader progress ---------- */
   var barFill = document.getElementById('preBarFill');
   var pct = document.getElementById('prePct');
   var preloader = document.getElementById('preloader');
   var progress = 0;
   var targetProgress = 0;
-  var rafId = null;
 
   function setTarget(p){ if(p > targetProgress) targetProgress = Math.min(p,100); }
 
-  // Weighted readiness signals: DOM parsed (30), fonts ready (30), window load (40)
   if(document.readyState === 'interactive' || document.readyState === 'complete'){ setTarget(30); }
   else { document.addEventListener('DOMContentLoaded', function(){ setTarget(30); }); }
 
   if(document.fonts && document.fonts.ready){
-    document.fonts.ready.then(function(){ setTarget(progressAfterFonts()); });
-  } else {
-    setTarget(progressAfterFonts());
-  }
-  function progressAfterFonts(){ return Math.max(targetProgress, 60); }
+    document.fonts.ready.then(function(){ setTarget(60); });
+  } else { setTarget(60); }
 
   var loadFired = false;
-  window.addEventListener('load', function(){
-    loadFired = true;
-    setTarget(100);
-  });
-  // fallback in case load already fired before script executed
+  window.addEventListener('load', function(){ loadFired = true; setTarget(100); });
   if(document.readyState === 'complete'){ loadFired = true; setTarget(100); }
 
   function animate(){
-    // ease progress toward targetProgress
     progress += (targetProgress - progress) * 0.12;
     if(targetProgress >= 100 && progress > 99.3){ progress = 100; }
     var display = Math.round(progress);
     if(barFill) barFill.style.width = display + '%';
     if(pct) pct.textContent = 'Loading ' + display + '%';
 
-    if(progress >= 99.5 && loadFired){
-      finishLoad();
-      return;
-    }
-    rafId = requestAnimationFrame(animate);
+    if(progress >= 99.5 && loadFired){ finishLoad(); return; }
+    requestAnimationFrame(animate);
   }
 
   var finished = false;
@@ -1117,12 +1113,10 @@
     }, reduceMotion ? 0 : 220);
   }
 
-  // Safety net: never hang forever on slow/broken connections
   var safetyTimer = setTimeout(function(){ setTarget(100); loadFired = true; }, 6000);
   window.addEventListener('load', function(){ clearTimeout(safetyTimer); });
 
   if(reduceMotion){
-    // Skip animated ramp; jump straight through once ready
     var quickCheck = setInterval(function(){
       if(document.readyState === 'complete'){
         clearInterval(quickCheck);
@@ -1131,10 +1125,9 @@
       }
     }, 60);
   } else {
-    rafId = requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
   }
 
-  /* ---------- Header scroll state ---------- */
   var header = document.getElementById('siteHeader');
   function onScroll(){
     if(window.scrollY > 40){ header.classList.add('scrolled'); }
@@ -1143,7 +1136,6 @@
   window.addEventListener('scroll', onScroll, { passive:true });
   onScroll();
 
-  /* ---------- Mobile nav ---------- */
   var toggle = document.getElementById('navToggle');
   var nav = document.getElementById('primaryNav');
   var scrim = document.getElementById('navScrim');
@@ -1163,7 +1155,6 @@
   scrim.addEventListener('click', closeNav);
   nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeNav); });
 
-  /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
   if('IntersectionObserver' in window && !reduceMotion){
     var io = new IntersectionObserver(function(entries){
@@ -1174,23 +1165,20 @@
         }
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-    revealEls.forEach(function(el){ io.observe(el); });
+    revealEls.forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
   } else {
     revealEls.forEach(function(el){ el.classList.add('in'); });
   }
 
-  /* ---------- Footer year ---------- */
   var y = document.getElementById('year');
   if(y) y.textContent = new Date().getFullYear();
 
-  /* ---------- Lead form -> WhatsApp ---------- */
-  var WHATSAPP_NUMBER = '2348166187159'; // international format, no plus/leading zeros
+  var WHATSAPP_NUMBER = '2348166187159';
 
   var leadForm = document.getElementById('leadForm');
   if(leadForm){
     var successBox = document.getElementById('leadSuccess');
     var fallbackLink = document.getElementById('leadFallback');
-    var lastWaUrl = '';
 
     function markInvalid(fieldId, invalid){
       var el = document.getElementById(fieldId);
@@ -1233,14 +1221,12 @@
       }
 
       var waUrl = buildWaLink({ name: name, phone: phone, interest: interest, message: message });
-      lastWaUrl = waUrl;
       if(fallbackLink) fallbackLink.href = waUrl;
 
       window.open(waUrl, '_blank', 'noopener');
       successBox.classList.add('show');
     });
 
-    // clear invalid state as the visitor fixes a field
     ['ld-name','ld-phone','ld-interest','ld-message'].forEach(function(id){
       var el = document.getElementById(id);
       if(!el) return;
