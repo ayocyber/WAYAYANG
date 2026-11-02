@@ -645,14 +645,13 @@
   .cap-num small{ font-family: var(--body); font-size: 0.875rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-pale); }
   .cap-label{ display: block; margin-top: 14px; font-size: var(--fs-small); color: rgba(251,247,239,0.72); }
   .cap-label strong{ display: block; font-weight: 600; color: var(--cream); margin-bottom: 2px; }
-  .cap-figs--3{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .cap-figs--3 .cap-num{ font-size: clamp(2.2rem, 1.3rem + 2.4vw, 4rem); }
-  .cap--lead .cap-num{ color: var(--cream); }
+  .cap-figs--1{ grid-template-columns: 1fr; }
+  .cap-figs--1 .cap-num{ font-size: clamp(4rem, 2rem + 6vw, 8.5rem); }
   @media (max-width: 1100px){
     .capacity{ grid-template-columns: 1fr; }
   }
   @media (max-width: 520px){
-    .cap-figs, .cap-figs--3{ grid-template-columns: 1fr; gap: 24px; }
+    .cap-figs{ grid-template-columns: 1fr; gap: 24px; }
     .cap{ padding-left: 0; border-left: 0; padding-top: 22px; border-top: 1px solid var(--line-light); }
   }
 
@@ -1305,7 +1304,7 @@
             </div>
           </div>
         </li>
-        <li class="op" data-caption="Illustrative · Automated rice mill, Arkansas, USA">
+        <li class="op" data-caption="Illustrative · Rice mill control room, USA">
           <button type="button" class="op-head" id="op-h2" aria-controls="op-d2" aria-expanded="false">
             <span class="op-num">02</span>
             <span><span class="op-tag">Processing</span><span class="op-title">Rice processing</span></span>
@@ -1314,7 +1313,7 @@
           <div class="op-detail" id="op-d2" role="region" aria-labelledby="op-h2">
             <div>
               <p>Milling paddy into clean, consistent, market-ready Prime Foods rice in our 100 tons-per-day rice mill, run by trained, experienced hands.</p>
-              <div class="op-img-m"><img src="images/photos/op-mill-line-700.webp" width="700" height="700" alt="A row of white rice milling machines inside an automated rice mill" loading="lazy" decoding="async"></div>
+              <div class="op-img-m"><img src="images/photos/op-mill-control-700.webp" width="700" height="700" alt="An operator monitoring the milling line from a rice mill control room" loading="lazy" decoding="async"></div>
             </div>
           </div>
         </li>
@@ -1335,7 +1334,7 @@
       <div class="ops-visual" aria-hidden="true" data-reveal style="--d:.15s">
         <div class="ops-stack" id="opsStack">
           <figure class="is-active"><img src="images/photos/op-tractor-700.webp" srcset="images/photos/op-tractor-700.webp 700w, images/photos/op-tractor-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
-          <figure><img src="images/photos/op-mill-line-700.webp" srcset="images/photos/op-mill-line-700.webp 700w, images/photos/op-mill-line-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/photos/op-mill-control-700.webp" srcset="images/photos/op-mill-control-700.webp 700w, images/photos/op-mill-control-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
           <figure><img src="images/photos/op-rice-bags-700.webp" srcset="images/photos/op-rice-bags-700.webp 700w, images/photos/op-rice-bags-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
         </div>
         <div class="ops-hud"><span class="ops-count"><span id="opsCount">01</span><small>/ 03</small></span><span class="caption" id="opsCaption">Illustrative · Tractor on tilled farmland</span></div>
@@ -1348,18 +1347,10 @@
         <h3>A 100 tons-per-day rice mill, fed by mechanised farms.</h3>
         <p>Tractors and combine harvesters bring in the paddy; our rice mill cleans, hulls, polishes and grades it at up to 100 tons a day, ready for bulk and wholesale orders.</p>
       </div>
-      <div class="cap-figs cap-figs--3">
+      <div class="cap-figs cap-figs--1">
         <div class="cap cap--lead">
           <span class="cap-num">100<small>tons / day</small></span>
-          <span class="cap-label"><strong>Rice mill capacity</strong>Paddy in, Prime Foods rice out</span>
-        </div>
-        <div class="cap">
-          <span class="cap-num">10,000<small>tons</small></span>
-          <span class="cap-label"><strong>Milling machine one</strong>Rice milling &amp; processing</span>
-        </div>
-        <div class="cap">
-          <span class="cap-num">30,000<small>tons</small></span>
-          <span class="cap-label"><strong>Milling machine two</strong>Rice milling &amp; processing</span>
+          <span class="cap-label"><strong>Rice mill capacity</strong>Paddy in, clean Prime Foods rice out, every day</span>
         </div>
       </div>
     </div>
@@ -1380,10 +1371,10 @@
 <section class="vision on-dark" aria-labelledby="vision-title">
   <div class="vision-media">
     <img data-parallax="0.12"
-      src="images/photos/vision-open-farmland-1600.webp"
-      srcset="images/photos/vision-open-farmland-960.webp 960w, images/photos/vision-open-farmland-1600.webp 1600w, images/photos/vision-open-farmland-2400.webp 2400w"
+      src="images/photos/vision-rice-mill-1600.webp"
+      srcset="images/photos/vision-rice-mill-960.webp 960w, images/photos/vision-rice-mill-1600.webp 1600w, images/photos/vision-rice-mill-2400.webp 2400w"
       sizes="100vw" width="2400" height="1600"
-      alt="A tractor crossing wide, open farmland under a vast, cloud-filled sky"
+      alt="A long row of white rice milling machines inside an automated rice mill"
       loading="lazy" decoding="async">
   </div>
   <div class="container">
@@ -1393,7 +1384,7 @@
       <p data-split>To be the foremost agricultural producing and processing company in <em>Nigeria, across Africa and the world.</em></p>
     </blockquote>
   </div>
-  <span class="caption figure-cap">Illustrative · Tractor on open farmland</span>
+  <span class="caption figure-cap">Illustrative · Automated rice mill, Arkansas, USA</span>
 </section>
 
 <!-- ============ VALUES: PRIQ ============ -->
@@ -1695,6 +1686,7 @@
         <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0045).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (mill line)</a> — USDA (Public domain)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0052).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (milling machines)</a> — USDA (Public domain)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0049).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (paddy sorter)</a> — USDA (Public domain)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0044).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (control room)</a> — USDA (Public domain)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_213.jpg" target="_blank" rel="noopener">Abakaliki rice mill 213</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_132.jpg" target="_blank" rel="noopener">Abakaliki rice mill 132</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_203.jpg" target="_blank" rel="noopener">Abakaliki rice mill 203</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
@@ -1702,7 +1694,6 @@
         <li><a href="https://commons.wikimedia.org/wiki/File:Rice_Cutting_Machine.jpg" target="_blank" rel="noopener">Rice Cutting Machine</a> — M Joko Apriyo Putro (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_New_Holland_T6.165_plowing_(Zadobrova,_Ljubljana).jpg" target="_blank" rel="noopener">Tractor New Holland T6.165 plowing</a> — Petar Milošević (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_for_farming.jpg" target="_blank" rel="noopener">Tractor for farming</a> — Sasu photography (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_in_farm_April_2025.jpg" target="_blank" rel="noopener">Tractor in farm April 2025</a> — Sasu photography (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Farm_mechanization_in_Oromia.jpg" target="_blank" rel="noopener">Farm mechanization in Oromia</a> — Lucy Shaw (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Langkawi_Malaysia_Rice-Harvesting-05.jpg" target="_blank" rel="noopener">Langkawi Malaysia Rice-Harvesting-05</a> — CEphoto, Uwe Aranas (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener license">CC BY-SA 3.0</a>)</li>
         <li><a href="https://commons.wikimedia.org/wiki/File:Bags_of_rice_are_unloaded_from_truck_to_pile_in_a_Dakar_warehouse.jpg" target="_blank" rel="noopener">Bags of rice unloaded in a Dakar warehouse</a> — Lemonblind (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
