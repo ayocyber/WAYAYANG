@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wyayang Enterprise Ltd. | Agricultural Production &amp; Rice Processing in Nigeria</title>
-<meta name="description" content="Wyayang Enterprise Ltd. (RC 1876531) is a Lagos-based agricultural production and processing company, building its strength in rice to serve Nigeria's growing demand for quality food.">
-<meta name="keywords" content="Wyayang, Wyayang Enterprise, agricultural production Nigeria, rice processing Nigeria, agricultural processing company, farm produce Lagos, agribusiness Nigeria, food processing Nigeria">
+<meta name="description" content="Wyayang Enterprise Ltd. (RC 1876531) is a Lagos-based agricultural production and processing company, building its strength in rice to serve Nigeria's growing demand for quality food. Its processed products are sold as Prime Foods.">
+<meta name="keywords" content="Wyayang, Wyayang Enterprise, Prime Foods, agricultural production Nigeria, rice processing Nigeria, agricultural processing company, farm produce Lagos, agribusiness Nigeria, food processing Nigeria">
 <meta name="author" content="Wyayang Enterprise Ltd.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#14213D">
@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://www.wyayangenterprise.com/images/photos/og-wyayang.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Ripe rice panicles held in a farmer's hand">
+<meta property="og:image:alt" content="A green combine harvester cutting a golden rice crop">
 <meta property="og:url" content="https://www.wyayangenterprise.com/">
 <meta property="og:locale" content="en_NG">
 
@@ -38,8 +38,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
 
-<link rel="preload" as="image" href="images/photos/hero-rice-panicles-1600.webp"
-      imagesrcset="images/photos/hero-rice-panicles-960.webp 960w, images/photos/hero-rice-panicles-1600.webp 1600w, images/photos/hero-rice-panicles-2400.webp 2400w"
+<link rel="preload" as="image" href="images/photos/hero-munjibir-aerial-1600.webp"
+      imagesrcset="images/photos/hero-munjibir-aerial-960.webp 960w, images/photos/hero-munjibir-aerial-1600.webp 1600w, images/photos/hero-munjibir-aerial-2400.webp 2400w"
       imagesizes="100vw" fetchpriority="high">
 
 <!-- Structured Data -->
@@ -53,6 +53,7 @@
   "logo": "https://www.wyayangenterprise.com/images/wyayang-logo-navy.png",
   "image": "https://www.wyayangenterprise.com/images/photos/og-wyayang.jpg",
   "description": "Wyayang Enterprise Ltd. is a Lagos-based agricultural production and processing company in Nigeria, building its strength in the production and processing of rice.",
+  "brand": { "@type": "Brand", "name": "Prime Foods" },
   "slogan": "Professionalism, Reliability, Integrity and Quality",
   "identifier": {
     "@type": "PropertyValue",
@@ -625,6 +626,36 @@
   .ops-count{ font-family: var(--display); font-weight: 300; font-size: clamp(2.4rem, 1.6rem + 2vw, 3.6rem); line-height: 0.85; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
   .ops-count small{ font-size: 0.36em; color: rgba(251,247,239,0.6); letter-spacing: 0; margin-left: 4px; }
 
+  /* Milling capacity band */
+  .capacity{
+    margin-top: clamp(56px, 6vw, 88px);
+    display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: center;
+    padding: clamp(32px, 4.4vw, 64px); border-radius: var(--radius);
+    background: var(--navy); color: var(--cream);
+  }
+  .cap-intro h3{ margin-top: 18px; color: var(--cream); font-size: var(--fs-h3); line-height: 1.2; max-width: 14em; }
+  .cap-intro p{ margin-top: 14px; color: rgba(251,247,239,0.72); max-width: 30em; }
+  .cap-figs{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cap{ padding: 8px 0 8px clamp(20px, 2.6vw, 40px); border-left: 1px solid var(--line-light); }
+  .cap-num{
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    font-family: var(--display); font-weight: 300; font-size: clamp(2.6rem, 1.4rem + 3.6vw, 5.2rem);
+    line-height: 0.95; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; color: var(--gold-bright);
+  }
+  .cap-num small{ font-family: var(--body); font-size: 0.875rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-pale); }
+  .cap-label{ display: block; margin-top: 14px; font-size: var(--fs-small); color: rgba(251,247,239,0.72); }
+  .cap-label strong{ display: block; font-weight: 600; color: var(--cream); margin-bottom: 2px; }
+  .cap-figs--3{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cap-figs--3 .cap-num{ font-size: clamp(2.2rem, 1.3rem + 2.4vw, 4rem); }
+  .cap--lead .cap-num{ color: var(--cream); }
+  @media (max-width: 1100px){
+    .capacity{ grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px){
+    .cap-figs, .cap-figs--3{ grid-template-columns: 1fr; gap: 24px; }
+    .cap{ padding-left: 0; border-left: 0; padding-top: 22px; border-top: 1px solid var(--line-light); }
+  }
+
   .enquiry-row{
     margin-top: clamp(40px, 4vw, 56px);
     display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px;
@@ -1097,54 +1128,64 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="top" aria-labelledby="hero-title" aria-roledescription="carousel">
   <div class="hero-media" id="heroSlides" aria-live="off">
-    <figure class="hero-slide is-active is-instant" role="group" aria-roledescription="slide" aria-label="1 of 4: Cultivation" data-caption="Ripening rice, Nigeria" style="--pos: 62% 40%; --pos-m: 72% 40%">
+    <figure class="hero-slide is-active is-instant" role="group" aria-roledescription="slide" aria-label="1 of 5: Rice fields" data-caption="Rice paddies, Munjibir, Kano State" style="--pos: 50% 55%; --pos-m: 62% 55%">
       <div class="hs-inner">
         <img
-          src="images/photos/hero-rice-panicles-1600.webp"
-          srcset="images/photos/hero-rice-panicles-960.webp 960w, images/photos/hero-rice-panicles-1600.webp 1600w, images/photos/hero-rice-panicles-2400.webp 2400w"
+          src="images/photos/hero-munjibir-aerial-1600.webp"
+          srcset="images/photos/hero-munjibir-aerial-960.webp 960w, images/photos/hero-munjibir-aerial-1600.webp 1600w, images/photos/hero-munjibir-aerial-2400.webp 2400w"
           sizes="100vw" width="2400" height="1600"
-          alt="A farmer's hand cradling heavy, ripening rice panicles in a green rice field"
+          alt="Aerial view of flooded rice paddies stretching towards a lake at Munjibir, Kano State"
           fetchpriority="high" decoding="async">
       </div>
     </figure>
-    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 4: The field" aria-hidden="true" data-caption="Rice farm, Nigeria" style="--pos: 58% 45%; --pos-m: 64% 45%">
+    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 5: Mechanised" aria-hidden="true" data-caption="Tractor tilling farmland" style="--pos: 55% 50%; --pos-m: 58% 50%">
       <div class="hs-inner">
         <img
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          data-srcset="images/photos/hero-field-walk-960.webp 960w, images/photos/hero-field-walk-1600.webp 1600w, images/photos/hero-field-walk-2400.webp 2400w"
+          data-srcset="images/photos/hero-tractor-tilling-960.webp 960w, images/photos/hero-tractor-tilling-1600.webp 1600w, images/photos/hero-tractor-tilling-2400.webp 2400w"
           sizes="100vw" width="2400" height="1600"
-          alt="Three women in bright wrappers walking through a green rice farm, carrying bowls on their heads"
+          alt="A tractor tilling dark farmland, dust rising behind the plough"
           decoding="async">
       </div>
     </figure>
-    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 4: Processing" aria-hidden="true" data-caption="Rice mill, Nigeria" style="--pos: 55% 45%; --pos-m: 52% 45%">
+    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 5: Harvest" aria-hidden="true" data-caption="Rice harvest, France" style="--pos: 50% 50%; --pos-m: 58% 50%">
       <div class="hs-inner">
         <img
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          data-srcset="images/photos/hero-mill-winnowing-960.webp 960w, images/photos/hero-mill-winnowing-1600.webp 1600w, images/photos/hero-mill-winnowing-2400.webp 2400w"
-          sizes="100vw" width="2400" height="1554"
-          alt="Women in straw hats winnowing rice at a mill, chaff blowing on the wind"
+          data-srcset="images/photos/hero-combine-harvest-960.webp 960w, images/photos/hero-combine-harvest-1600.webp 1600w, images/photos/hero-combine-harvest-2400.webp 2400w"
+          sizes="100vw" width="2400" height="1600"
+          alt="A combine harvester cutting a golden rice crop"
           decoding="async">
       </div>
     </figure>
-    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 4: Scale" aria-hidden="true" data-caption="Rice paddies, Munjibir, Kano State" style="--pos: 50% 55%; --pos-m: 62% 55%">
+    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 5: Milling" aria-hidden="true" data-caption="Automated rice mill, Arkansas, USA" style="--pos: 50% 50%; --pos-m: 45% 50%">
       <div class="hs-inner">
         <img
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          data-srcset="images/photos/hero-munjibir-aerial-960.webp 960w, images/photos/hero-munjibir-aerial-1600.webp 1600w, images/photos/hero-munjibir-aerial-2400.webp 2400w"
-          sizes="100vw" width="2400" height="1599"
-          alt="Aerial view of flooded rice paddies stretching towards a lake at Munjibir, Kano State"
+          data-srcset="images/photos/hero-mill-line-960.webp 960w, images/photos/hero-mill-line-1600.webp 1600w, images/photos/hero-mill-line-2400.webp 2400w"
+          sizes="100vw" width="2400" height="1600"
+          alt="Inside an automated rice mill: blue steel elevators, conveyors and milling machines"
+          decoding="async">
+      </div>
+    </figure>
+    <figure class="hero-slide" role="group" aria-roledescription="slide" aria-label="5 of 5: Storage" aria-hidden="true" data-caption="Bagged rice, Abakaliki" style="--pos: 50% 50%; --pos-m: 50% 50%">
+      <div class="hs-inner">
+        <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-srcset="images/photos/hero-rice-sacks-960.webp 960w, images/photos/hero-rice-sacks-1600.webp 1600w, images/photos/hero-rice-sacks-2400.webp 2400w"
+          sizes="100vw" width="2400" height="1600"
+          alt="Sacks of rice stacked high at a mill in Abakaliki"
           decoding="async">
       </div>
     </figure>
     <span class="hero-wipe" id="heroWipe" aria-hidden="true"></span>
   </div>
-  <p class="hero-caption" aria-hidden="true"><span class="caption" id="heroCaption">Illustrative · Ripening rice, Nigeria</span></p>
+  <p class="hero-caption" aria-hidden="true"><span class="caption" id="heroCaption">Illustrative · Rice paddies, Munjibir, Kano State</span></p>
 
   <div class="container hero-body">
-    <span class="eyebrow on-dark" data-hero style="--d:.15s">Agricultural production &amp; processing · Lagos, Nigeria</span>
+    <span class="eyebrow on-dark" data-hero style="--d:.15s">Mechanised rice farming &amp; milling · Lagos, Nigeria</span>
     <h1 id="hero-title" data-split data-hero-split style="--d:.25s">Grown with care.<br><em>Processed with discipline.</em></h1>
-    <p class="lead" data-hero style="--d:.75s">Wyayang Enterprise Ltd. produces and processes agricultural goods — building our strength in rice — to deliver reliable, quality product to the customers and partners who depend on it.</p>
+    <p class="lead" data-hero style="--d:.75s">Wyayang Enterprise Ltd. produces and processes agricultural goods — building our strength in rice — and delivers its processed products to customers and partners under the <strong>Prime Foods</strong> name.</p>
     <div class="hero-actions" data-hero style="--d:.9s">
       <a href="#contact" class="btn" data-magnetic>
         <span class="btn-label">Partner with us</span>
@@ -1161,15 +1202,16 @@
       <ul class="hero-facts" data-hero style="--d:1.1s">
         <li><strong>RC</strong> 1876531</li>
         <li><strong>Base</strong> Lagos, Nigeria</li>
-        <li><strong>Focus</strong> Rice production &amp; processing</li>
+        <li><strong>Rice mill</strong> 100 tons/day</li><li><strong>Brand</strong> Prime Foods</li>
       </ul>
       <div class="slide-nav" data-hero style="--d:1.2s">
-        <span class="caption slide-meta" id="heroCaptionM" aria-hidden="true">Illustrative · Ripening rice, Nigeria</span>
+        <span class="caption slide-meta" id="heroCaptionM" aria-hidden="true">Illustrative · Rice paddies, Munjibir, Kano State</span>
         <div class="slide-tabs" role="group" aria-label="Choose a slide">
-          <button type="button" class="slide-tab is-active" aria-controls="heroSlides" aria-current="true" aria-label="Slide 1: Cultivation"><span class="t-bar"><i></i></span><span class="t-num">01</span><span class="t-label">Cultivation</span></button>
-          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 2: The field"><span class="t-bar"><i></i></span><span class="t-num">02</span><span class="t-label">The field</span></button>
-          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 3: Processing"><span class="t-bar"><i></i></span><span class="t-num">03</span><span class="t-label">Processing</span></button>
-          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 4: Scale"><span class="t-bar"><i></i></span><span class="t-num">04</span><span class="t-label">Scale</span></button>
+          <button type="button" class="slide-tab is-active" aria-controls="heroSlides" aria-current="true" aria-label="Slide 1: Rice fields"><span class="t-bar"><i></i></span><span class="t-num">01</span><span class="t-label">Rice fields</span></button>
+          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 2: Mechanised"><span class="t-bar"><i></i></span><span class="t-num">02</span><span class="t-label">Mechanised</span></button>
+          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 3: Harvest"><span class="t-bar"><i></i></span><span class="t-num">03</span><span class="t-label">Harvest</span></button>
+          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 4: Milling"><span class="t-bar"><i></i></span><span class="t-num">04</span><span class="t-label">Milling</span></button>
+          <button type="button" class="slide-tab" aria-controls="heroSlides" aria-label="Slide 5: Storage"><span class="t-bar"><i></i></span><span class="t-num">05</span><span class="t-label">Storage</span></button>
         </div>
         <button type="button" class="slide-toggle" id="slideToggle" aria-label="Pause slideshow">
           <svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="3" y="2" width="2.4" height="10" rx="0.6" fill="currentColor"/><rect x="8.6" y="2" width="2.4" height="10" rx="0.6" fill="currentColor"/></svg>
@@ -1195,27 +1237,27 @@
       <div class="about-media">
         <figure class="frame about-main" data-reveal="clip">
           <img class="px" data-parallax="0.06"
-            src="images/photos/about-rice-farmer-800.webp"
-            srcset="images/photos/about-rice-farmer-800.webp 800w, images/photos/about-rice-farmer-1400.webp 1400w"
+            src="images/photos/about-rice-combine-800.webp"
+            srcset="images/photos/about-rice-combine-800.webp 800w, images/photos/about-rice-combine-1400.webp 1400w"
             sizes="(max-width: 900px) 90vw, 46vw" width="1400" height="933"
-            alt="A farmer in a white cap carrying a large bundle of freshly harvested rice stalks across a field"
+            alt="An operator driving a rice combine harvester through a ripe field"
             loading="lazy" decoding="async">
         </figure>
         <figure class="frame about-inset" data-reveal="clip" style="--d:.25s">
           <img
-            src="images/photos/about-rice-heads-480.webp"
-            srcset="images/photos/about-rice-heads-480.webp 480w, images/photos/about-rice-heads-720.webp 720w"
+            src="images/photos/about-tractor-aerial-480.webp"
+            srcset="images/photos/about-tractor-aerial-480.webp 480w, images/photos/about-tractor-aerial-720.webp 720w"
             sizes="(max-width: 900px) 42vw, 20vw" width="720" height="720"
-            alt="Close-up of heavy, ripening rice heads in a green paddy"
+            alt="Aerial view of a blue tractor ploughing a strip of farmland"
             loading="lazy" decoding="async">
         </figure>
-        <span class="caption figure-cap">Illustrative · Rice harvest, Nigeria</span>
+        <span class="caption figure-cap">Illustrative · Rice combine, Indonesia</span>
       </div>
 
       <div class="about-copy">
         <span class="eyebrow" data-reveal>Our company</span>
         <h2 id="about-title" data-split>An agricultural company built on <em>discipline,</em> not shortcuts.</h2>
-        <p class="lead" data-reveal>From sourcing raw produce to processing it into goods that meet real market standards, Wyayang treats agriculture as a discipline — one carried out with clear process, careful quality control and people who show up.</p>
+        <p class="lead" data-reveal>From sourcing raw produce to processing it into goods that meet real market standards, Wyayang treats agriculture as a discipline — one carried out with clear process, careful quality control and people who show up. Everything we process reaches the market under one name: Prime Foods.</p>
 
         <dl class="vm" data-reveal>
           <div class="vm-row">
@@ -1250,20 +1292,20 @@
 
     <div class="ops">
       <ol class="ops-list" id="opsList" data-reveal>
-        <li class="op is-active" data-caption="Illustrative · Harvest, Nigeria">
+        <li class="op is-active" data-caption="Illustrative · Tractor on tilled farmland">
           <button type="button" class="op-head" id="op-h1" aria-controls="op-d1" aria-expanded="true">
             <span class="op-num">01</span>
-            <span><span class="op-tag">Production</span><span class="op-title">Agricultural production</span></span>
+            <span><span class="op-tag">Production</span><span class="op-title">Mechanised farming</span></span>
             <span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </button>
           <div class="op-detail" id="op-d1" role="region" aria-labelledby="op-h1">
             <div>
-              <p>Growing and sourcing agricultural produce, with a focus on rice to help meet Nigeria’s rising demand for quality food.</p>
-              <div class="op-img-m"><img src="images/photos/op-production-700.webp" width="700" height="700" alt="Two women threshing harvested rice in a sunlit field, grain pouring from raised basins" loading="lazy" decoding="async"></div>
+              <p>Mechanised rice farming: tractors for land preparation and combine harvesters at harvest, so we can grow and source paddy at scale for Nigeria’s rising demand.</p>
+              <div class="op-img-m"><img src="images/photos/op-tractor-700.webp" width="700" height="700" alt="A driver on a red tractor working tilled farmland" loading="lazy" decoding="async"></div>
             </div>
           </div>
         </li>
-        <li class="op" data-caption="Illustrative · Paddy drying, Nigeria">
+        <li class="op" data-caption="Illustrative · Automated rice mill, Arkansas, USA">
           <button type="button" class="op-head" id="op-h2" aria-controls="op-d2" aria-expanded="false">
             <span class="op-num">02</span>
             <span><span class="op-tag">Processing</span><span class="op-title">Rice processing</span></span>
@@ -1271,12 +1313,12 @@
           </button>
           <div class="op-detail" id="op-d2" role="region" aria-labelledby="op-h2">
             <div>
-              <p>Turning harvested produce into consistent, market-ready product through modern technology and trained, experienced hands.</p>
-              <div class="op-img-m"><img src="images/photos/op-processing-700.webp" width="700" height="700" alt="Mounds of paddy rice spread to dry on woven mats at a rice mill" loading="lazy" decoding="async"></div>
+              <p>Milling paddy into clean, consistent, market-ready Prime Foods rice in our 100 tons-per-day rice mill, run by trained, experienced hands.</p>
+              <div class="op-img-m"><img src="images/photos/op-mill-line-700.webp" width="700" height="700" alt="A row of white rice milling machines inside an automated rice mill" loading="lazy" decoding="async"></div>
             </div>
           </div>
         </li>
-        <li class="op" data-caption="Illustrative · Paddy rice, Nigeria">
+        <li class="op" data-caption="Illustrative · Bagged rice, Abakaliki">
           <button type="button" class="op-head" id="op-h3" aria-controls="op-d3" aria-expanded="false">
             <span class="op-num">03</span>
             <span><span class="op-tag">Supply</span><span class="op-title">Reliable supply</span></span>
@@ -1284,19 +1326,41 @@
           </button>
           <div class="op-detail" id="op-d3" role="region" aria-labelledby="op-h3">
             <div>
-              <p>Delivering finished product to customers and stakeholders on schedule — simply put, doing what we say we will do.</p>
-              <div class="op-img-m"><img src="images/photos/op-supply-700.webp" width="700" height="700" alt="A woven sack filled to the brim with paddy rice" loading="lazy" decoding="async"></div>
+              <p>Delivering finished Prime Foods products to customers and stakeholders on schedule — simply put, doing what we say we will do.</p>
+              <div class="op-img-m"><img src="images/photos/op-rice-bags-700.webp" width="700" height="700" alt="Filled sacks of rice tied and ready for dispatch" loading="lazy" decoding="async"></div>
             </div>
           </div>
         </li>
       </ol>
       <div class="ops-visual" aria-hidden="true" data-reveal style="--d:.15s">
         <div class="ops-stack" id="opsStack">
-          <figure class="is-active"><img src="images/photos/op-production-700.webp" srcset="images/photos/op-production-700.webp 700w, images/photos/op-production-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
-          <figure><img src="images/photos/op-processing-700.webp" srcset="images/photos/op-processing-700.webp 700w, images/photos/op-processing-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
-          <figure><img src="images/photos/op-supply-700.webp" srcset="images/photos/op-supply-700.webp 700w, images/photos/op-supply-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="is-active"><img src="images/photos/op-tractor-700.webp" srcset="images/photos/op-tractor-700.webp 700w, images/photos/op-tractor-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/photos/op-mill-line-700.webp" srcset="images/photos/op-mill-line-700.webp 700w, images/photos/op-mill-line-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/photos/op-rice-bags-700.webp" srcset="images/photos/op-rice-bags-700.webp 700w, images/photos/op-rice-bags-1200.webp 1200w" sizes="(max-width: 900px) 1px, 40vw" width="1200" height="1200" alt="" loading="lazy" decoding="async"></figure>
         </div>
-        <div class="ops-hud"><span class="ops-count"><span id="opsCount">01</span><small>/ 03</small></span><span class="caption" id="opsCaption">Illustrative · Harvest, Nigeria</span></div>
+        <div class="ops-hud"><span class="ops-count"><span id="opsCount">01</span><small>/ 03</small></span><span class="caption" id="opsCaption">Illustrative · Tractor on tilled farmland</span></div>
+      </div>
+    </div>
+
+    <div class="capacity" data-reveal>
+      <div class="cap-intro">
+        <span class="eyebrow on-dark">Milling capacity</span>
+        <h3>A 100 tons-per-day rice mill, fed by mechanised farms.</h3>
+        <p>Tractors and combine harvesters bring in the paddy; our rice mill cleans, hulls, polishes and grades it at up to 100 tons a day, ready for bulk and wholesale orders.</p>
+      </div>
+      <div class="cap-figs cap-figs--3">
+        <div class="cap cap--lead">
+          <span class="cap-num">100<small>tons / day</small></span>
+          <span class="cap-label"><strong>Rice mill capacity</strong>Paddy in, Prime Foods rice out</span>
+        </div>
+        <div class="cap">
+          <span class="cap-num">10,000<small>tons</small></span>
+          <span class="cap-label"><strong>Milling machine one</strong>Rice milling &amp; processing</span>
+        </div>
+        <div class="cap">
+          <span class="cap-num">30,000<small>tons</small></span>
+          <span class="cap-label"><strong>Milling machine two</strong>Rice milling &amp; processing</span>
+        </div>
       </div>
     </div>
 
@@ -1305,7 +1369,7 @@
       <div class="chips">
         <a class="chip" href="#contact" data-interest="Sourcing produce">Sourcing produce <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="chip" href="#contact" data-interest="Processing partnership">Processing partnership <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="chip" href="#contact" data-interest="Bulk / wholesale order">Bulk / wholesale orders <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="chip" href="#contact" data-interest="Prime Foods products">Prime Foods products <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="chip" href="#contact" data-interest="Bulk / wholesale order">Bulk / wholesale orders <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="chip" href="#contact" data-interest="Distribution & logistics">Distribution &amp; logistics <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
@@ -1316,10 +1380,10 @@
 <section class="vision on-dark" aria-labelledby="vision-title">
   <div class="vision-media">
     <img data-parallax="0.12"
-      src="images/photos/vision-rice-field-1600.webp"
-      srcset="images/photos/vision-rice-field-960.webp 960w, images/photos/vision-rice-field-1600.webp 1600w, images/photos/vision-rice-field-2400.webp 2400w"
-      sizes="100vw" width="2400" height="1796"
-      alt="A wide rice field stretching to the horizon under a vast, cloud-filled sky"
+      src="images/photos/vision-open-farmland-1600.webp"
+      srcset="images/photos/vision-open-farmland-960.webp 960w, images/photos/vision-open-farmland-1600.webp 1600w, images/photos/vision-open-farmland-2400.webp 2400w"
+      sizes="100vw" width="2400" height="1600"
+      alt="A tractor crossing wide, open farmland under a vast, cloud-filled sky"
       loading="lazy" decoding="async">
   </div>
   <div class="container">
@@ -1329,7 +1393,7 @@
       <p data-split>To be the foremost agricultural producing and processing company in <em>Nigeria, across Africa and the world.</em></p>
     </blockquote>
   </div>
-  <span class="caption figure-cap">Illustrative · Rice field, Nigeria</span>
+  <span class="caption figure-cap">Illustrative · Tractor on open farmland</span>
 </section>
 
 <!-- ============ VALUES: PRIQ ============ -->
@@ -1380,10 +1444,10 @@
 <!-- ============ RIBBON (scroll-velocity marquee) ============ -->
 <div class="ribbon" aria-hidden="true">
   <div class="ribbon-row ribbon-row--lg" data-ribbon="-1" data-speed="48">
-    <div class="ribbon-track"><div class="ribbon-group"><span class="rw">Professionalism</span><span class="rp"><img src="images/photos/pill-panicles.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Reliability</span><span class="rp"><img src="images/photos/pill-field.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Integrity</span><span class="rp"><img src="images/photos/pill-winnowing.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Quality</span><span class="rp"><img src="images/photos/pill-drying.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw"><em>Field to table</em></span><span class="rp"><img src="images/photos/pill-sheaves.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Lagos, Nigeria</span><span class="rp"><img src="images/photos/pill-aerial.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span></div></div>
+    <div class="ribbon-track"><div class="ribbon-group"><span class="rw">Professionalism</span><span class="rp"><img src="images/photos/pill-harvest.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Reliability</span><span class="rp"><img src="images/photos/pill-tractor.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Integrity</span><span class="rp"><img src="images/photos/pill-grain.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Quality</span><span class="rp"><img src="images/photos/pill-bags.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw"><em>Field to table</em></span><span class="rp"><img src="images/photos/pill-mill-line.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span><span class="rw">Lagos, Nigeria</span><span class="rp"><img src="images/photos/pill-aerial.webp" width="336" height="192" alt="" loading="lazy" decoding="async"></span></div></div>
   </div>
   <div class="ribbon-row ribbon-row--sm" data-ribbon="1" data-speed="36">
-    <div class="ribbon-track"><div class="ribbon-group"><span class="rs">Rice production<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Processing<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Quality assurance<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Reliable supply<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">RC 1876531<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Lagos, Nigeria<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span></div></div>
+    <div class="ribbon-track"><div class="ribbon-group"><span class="rs">Rice production<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Prime Foods<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Quality assurance<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Reliable supply<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">RC 1876531<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span><span class="rs">Lagos, Nigeria<svg viewBox="0 0 22 12" aria-hidden="true"><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><line x1="16.0" y1="12.0" x2="21.5" y2="12.0"/><line x1="15.7" y1="10.3" x2="19.0" y2="9.1"/><line x1="14.8" y1="8.8" x2="19.0" y2="5.3"/><line x1="13.5" y1="7.7" x2="15.2" y2="4.6"/><line x1="11.9" y1="7.1" x2="12.8" y2="1.7"/><line x1="10.1" y1="7.1" x2="9.5" y2="3.6"/><line x1="8.5" y1="7.7" x2="5.8" y2="2.9"/><line x1="7.2" y1="8.8" x2="4.5" y2="6.5"/><line x1="6.3" y1="10.3" x2="1.1" y2="8.4"/><line x1="6.0" y1="12.0" x2="2.5" y2="12.0"/></g></svg></span></div></div>
   </div>
 </div>
 
@@ -1401,47 +1465,47 @@
     <div class="process-layout">
       <div class="process-visual" aria-hidden="true">
         <div class="process-stack" id="processStack">
-          <figure><img src="images/photos/process-sourcing-1400.webp" srcset="images/photos/process-sourcing-800.webp 800w, images/photos/process-sourcing-1400.webp 1400w" sizes="50vw" width="1400" height="933" alt="" loading="lazy" decoding="async" style="object-position: 70% 50%"></figure>
-          <figure><img src="images/photos/process-milling-1400.webp" srcset="images/photos/process-milling-800.webp 800w, images/photos/process-milling-1400.webp 1400w" sizes="50vw" width="1400" height="935" alt="" loading="lazy" decoding="async" style="object-position: 40% 50%"></figure>
-          <figure><img src="images/photos/process-drying-1400.webp" srcset="images/photos/process-drying-800.webp 800w, images/photos/process-drying-1400.webp 1400w" sizes="50vw" width="1400" height="887" alt="" loading="lazy" decoding="async" style="object-position: 55% 50%"></figure>
-          <figure><img src="images/photos/process-dispatch-1400.webp" srcset="images/photos/process-dispatch-800.webp 800w, images/photos/process-dispatch-1400.webp 1400w" sizes="50vw" width="1400" height="906" alt="" loading="lazy" decoding="async" style="object-position: 55% 50%"></figure>
+          <figure><img src="images/photos/process-harvest-1400.webp" srcset="images/photos/process-harvest-800.webp 800w, images/photos/process-harvest-1400.webp 1400w" sizes="50vw" width="1400" height="933" alt="" loading="lazy" decoding="async" style="object-position: 50% 50%"></figure>
+          <figure><img src="images/photos/process-milling-1400.webp" srcset="images/photos/process-milling-800.webp 800w, images/photos/process-milling-1400.webp 1400w" sizes="50vw" width="1400" height="935" alt="" loading="lazy" decoding="async" style="object-position: 50% 50%"></figure>
+          <figure><img src="images/photos/process-quality-1400.webp" srcset="images/photos/process-quality-800.webp 800w, images/photos/process-quality-1400.webp 1400w" sizes="50vw" width="1400" height="887" alt="" loading="lazy" decoding="async" style="object-position: 50% 50%"></figure>
+          <figure><img src="images/photos/process-warehouse-truck-1400.webp" srcset="images/photos/process-warehouse-truck-800.webp 800w, images/photos/process-warehouse-truck-1400.webp 1400w" sizes="50vw" width="1400" height="906" alt="" loading="lazy" decoding="async" style="object-position: 50% 50%"></figure>
         </div>
         <div class="process-hud">
           <div class="process-count"><span id="processCount">01</span><small>/ 04</small></div>
-          <span class="caption" id="processCaption">Illustrative · Harvest, Nigeria</span>
+          <span class="caption" id="processCaption">Illustrative · Rice harvester, Malaysia</span>
         </div>
       </div>
 
       <div class="steps" id="steps">
         <span class="steps-rail" aria-hidden="true"><span class="steps-rail-fill" id="railFill"></span></span>
         <ol>
-        <li class="step" data-caption="Illustrative · Harvest, Nigeria">
+        <li class="step" data-caption="Illustrative · Rice harvester, Malaysia">
           <span class="step-node" aria-hidden="true">01</span>
           <span class="step-kicker">Stage one</span>
           <h3>Sourcing</h3>
           <p>Raw agricultural produce is sourced directly, with quality checks beginning at the point of origin — so standards are set before anything leaves the field.</p>
-          <div class="step-img"><img src="images/photos/process-sourcing-800.webp" width="800" height="533" alt="A farmer gathering bundles of harvested rice stalks" loading="lazy" decoding="async"></div>
+          <div class="step-img"><img src="images/photos/process-harvest-800.webp" width="800" height="533" alt="A rice combine harvester cutting a ripe crop, seen head-on" loading="lazy" decoding="async"></div>
         </li>
-        <li class="step" data-caption="Illustrative · Rice mill, Abakaliki">
+        <li class="step" data-caption="Illustrative · Paddy on a rice-mill sorter, USA">
           <span class="step-node" aria-hidden="true">02</span>
           <span class="step-kicker">Stage two</span>
           <h3>Processing</h3>
-          <p>Modern technology and trained hands turn raw produce into consistent, market-ready product, batch after batch.</p>
-          <div class="step-img"><img src="images/photos/process-milling-800.webp" width="800" height="534" alt="Workers at a rice mill in Abakaliki pouring grain from basins" loading="lazy" decoding="async"></div>
+          <p>Paddy is cleaned, hulled, polished and graded in our 100 tons-per-day rice mill, turning out consistent, market-ready rice batch after batch.</p>
+          <div class="step-img"><img src="images/photos/process-milling-800.webp" width="800" height="534" alt="Paddy rice pouring through a sorting screen inside a rice mill" loading="lazy" decoding="async"></div>
         </li>
-        <li class="step" data-caption="Illustrative · Grain drying, Nigeria">
+        <li class="step" data-caption="Illustrative · Rice samples, Abakaliki">
           <span class="step-node" aria-hidden="true">03</span>
           <span class="step-kicker">Stage three</span>
           <h3>Quality assurance</h3>
-          <p>Every batch is checked against our internal standard before it earns the Wyayang name.</p>
-          <div class="step-img"><img src="images/photos/process-drying-800.webp" width="800" height="507" alt="A worker inspecting rice grain spread to dry on mats" loading="lazy" decoding="async"></div>
+          <p>Every batch is checked against our internal standard before it earns the Prime Foods name.</p>
+          <div class="step-img"><img src="images/photos/process-quality-800.webp" width="800" height="507" alt="Bowls of rice samples set out beside open sacks for inspection" loading="lazy" decoding="async"></div>
         </li>
-        <li class="step" data-caption="Illustrative · Bagged rice, Nigeria">
+        <li class="step" data-caption="Illustrative · Rice warehouse, Senegal">
           <span class="step-node" aria-hidden="true">04</span>
           <span class="step-kicker">Stage four</span>
           <h3>Delivery</h3>
-          <p>Reliable distribution gets finished product to customers and stakeholders on schedule, as agreed.</p>
-          <div class="step-img"><img src="images/photos/process-dispatch-800.webp" width="800" height="518" alt="A woman carrying a full sack of rice on her head at a processing site" loading="lazy" decoding="async"></div>
+          <p>Reliable distribution gets finished Prime Foods products to customers and stakeholders on schedule, as agreed.</p>
+          <div class="step-img"><img src="images/photos/process-warehouse-truck-800.webp" width="800" height="518" alt="A long truck beside stacked bags of rice in a large warehouse" loading="lazy" decoding="async"></div>
         </li>
         </ol>
       </div>
@@ -1455,10 +1519,10 @@
     <div class="partner-band on-dark" id="partnerBand">
       <div class="partner-media">
         <img data-parallax="0.08"
-          src="images/photos/cta-palm-field-1200.webp"
-          srcset="images/photos/cta-palm-field-1200.webp 1200w, images/photos/cta-palm-field-2000.webp 2000w"
-          sizes="(max-width: 1400px) 100vw, 1320px" width="2000" height="1497"
-          alt="A lush green rice field edged with palm trees under a bright sky"
+          src="images/photos/cta-tractor-oromia-1200.webp"
+          srcset="images/photos/cta-tractor-oromia-1200.webp 1200w, images/photos/cta-tractor-oromia-2000.webp 2000w"
+          sizes="(max-width: 1400px) 100vw, 1320px" width="2000" height="1125"
+          alt="A red tractor with a blue cultivator on a farm in Oromia, Ethiopia"
           loading="lazy" decoding="async">
       </div>
       <div>
@@ -1548,7 +1612,7 @@
             <option value="" disabled selected>Select one</option>
             <option value="Sourcing produce">Sourcing produce</option>
             <option value="Processing partnership">Processing partnership</option>
-            <option value="Bulk / wholesale order">Bulk / wholesale order</option>
+            <option value="Prime Foods products">Prime Foods products</option><option value="Bulk / wholesale order">Bulk / wholesale order</option>
             <option value="Distribution & logistics">Distribution &amp; logistics</option>
             <option value="Something else">Something else</option>
           </select>
@@ -1592,7 +1656,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="images/wyayang-logo-light.png" alt="Wyayang Enterprise Ltd." width="640" height="204" loading="lazy">
-        <p>Wyayang Enterprise Ltd. — agricultural production and processing, run on Professionalism, Reliability, Integrity and Quality.</p>
+        <p>Wyayang Enterprise Ltd. — agricultural production and processing, run on Professionalism, Reliability, Integrity and Quality. Processed products sold as Prime Foods.</p>
       </div>
       <div>
         <h4>Company</h4>
@@ -1623,23 +1687,25 @@
 
     <details class="credits">
       <summary>Photography credits</summary>
-      <p>Photographs on this site are illustrative scenes of rice farming and processing in Nigeria, sourced from Wikimedia Commons. They do not depict Wyayang Enterprise Ltd.’s own farms, facilities or staff. All are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a> and have been resized, cropped and, in some cases, colour-adjusted.</p>
+      <p>Photographs on this site are illustrative scenes of mechanised rice farming and rice milling, from Nigeria and around the world, sourced from Wikimedia Commons. They do not depict Wyayang Enterprise Ltd.’s own farms, machinery, facilities or staff, and brand names visible on machinery do not imply any affiliation or endorsement. All have been resized and cropped; each photo’s licence is listed beside it.</p>
       <ul>
-        <li><a href="https://commons.wikimedia.org/wiki/File:A_healthy_rice_grain.jpg" target="_blank" rel="noopener">A healthy rice grain</a> — Photobyamin</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_farmer.jpg" target="_blank" rel="noopener">Rice farmer</a> — Photobyamin</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Residue_removal.jpg" target="_blank" rel="noopener">Residue removal</a> — Photobyamin</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_seed_001.jpg" target="_blank" rel="noopener">Rice seed 001</a> — MediaMOF</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Selling_rice_on_a_rice_farm.jpg" target="_blank" rel="noopener">Selling rice on a rice farm</a> — Aminucrus</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_processing_mill_49.jpg" target="_blank" rel="noopener">Rice processing mill 49</a> — Dokimazo99</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_processing_mill_76.jpg" target="_blank" rel="noopener">Rice processing mill 76</a> — Dokimazo99</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_field_21.jpg" target="_blank" rel="noopener">Rice field 21</a> — MediaMOF</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_field_002.jpg" target="_blank" rel="noopener">Rice field 002</a> — MediaMOF</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_processing_mill_113.jpg" target="_blank" rel="noopener">Rice processing mill 113</a> — Dokimazo99</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:RICE_FARM_IN_MUNJIBIR_TOWN.jpg" target="_blank" rel="noopener">Rice farm in Munjibir town</a> — Bappancey</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Farming_is_hard_work.jpg" target="_blank" rel="noopener">Farming is hard work</a> — Photobyamin</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_71.jpg" target="_blank" rel="noopener">Abakaliki rice mill 71</a> — MediaMOF</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_processing_mill_102.jpg" target="_blank" rel="noopener">Rice processing mill 102</a> — Dokimazo99</li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_processing_mill_53.jpg" target="_blank" rel="noopener">Rice processing mill 53</a> — Dokimazo99</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:RICE_FARM_IN_MUNJIBIR_TOWN.jpg" target="_blank" rel="noopener">Rice farm in Munjibir town</a> — Bappancey (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_In_farm.jpg" target="_blank" rel="noopener">Tractor In farm</a> — Sasu photography (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:R%C3%A9colte_du_riz_en_Camargue.JPG" target="_blank" rel="noopener">Récolte du riz en Camargue</a> — Berichard (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener license">CC BY-SA 3.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0045).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (mill line)</a> — USDA (Public domain)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0052).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (milling machines)</a> — USDA (Public domain)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Administrator_Zach_Ducheneaux_visits_Farmer_and_Rice_Mill_Owner_P_J_Haynie_(20220722-FPAC-PJK-0049).jpg" target="_blank" rel="noopener">Rice mill visit, Arkansas (paddy sorter)</a> — USDA (Public domain)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_213.jpg" target="_blank" rel="noopener">Abakaliki rice mill 213</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_132.jpg" target="_blank" rel="noopener">Abakaliki rice mill 132</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_203.jpg" target="_blank" rel="noopener">Abakaliki rice mill 203</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Abakaliki_rice_mill_127.jpg" target="_blank" rel="noopener">Abakaliki rice mill 127</a> — MediaMOF (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Rice_Cutting_Machine.jpg" target="_blank" rel="noopener">Rice Cutting Machine</a> — M Joko Apriyo Putro (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_New_Holland_T6.165_plowing_(Zadobrova,_Ljubljana).jpg" target="_blank" rel="noopener">Tractor New Holland T6.165 plowing</a> — Petar Milošević (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_for_farming.jpg" target="_blank" rel="noopener">Tractor for farming</a> — Sasu photography (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Tractor_in_farm_April_2025.jpg" target="_blank" rel="noopener">Tractor in farm April 2025</a> — Sasu photography (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Farm_mechanization_in_Oromia.jpg" target="_blank" rel="noopener">Farm mechanization in Oromia</a> — Lucy Shaw (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Langkawi_Malaysia_Rice-Harvesting-05.jpg" target="_blank" rel="noopener">Langkawi Malaysia Rice-Harvesting-05</a> — CEphoto, Uwe Aranas (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener license">CC BY-SA 3.0</a>)</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Bags_of_rice_are_unloaded_from_truck_to_pile_in_a_Dakar_warehouse.jpg" target="_blank" rel="noopener">Bags of rice unloaded in a Dakar warehouse</a> — Lemonblind (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>)</li>
       </ul>
     </details>
 
